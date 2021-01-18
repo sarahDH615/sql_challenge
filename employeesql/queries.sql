@@ -21,28 +21,31 @@
 -- from dept_manager;
 
 --List the department of each employee with: employee number, last name, first name, department name
---! Having trouble
--- select emp_no, first_name, last_name, (
--- 	dept_name from departments where departments.dept_no in (
--- 		select dept_no from dept_emp where dept_emp.emp_no = employees.emp_no
--- 	)
--- );
--- select dept_name from departments where dept_no in (
--- 	select dept_no from dept_emp where emp_no in (
--- 		select emp_no from employees
--- 	)
--- );
+-- select dept_emp.emp_no, employees.last_name, employees.first_name, departments.dept_name
+-- from employees
+-- join dept_emp on dept_emp.emp_no = employees.emp_no
+-- join departments on dept_emp.dept_no = departments.dept_no;
 
 -- List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
 -- select first_name, last_name, sex from employees where first_name = 'Hercules' and last_name like 'B%';
 
 -- List all employees in Sales department, including employee number, last name, first name, department name
-select first_name, last_name, (select dept_name from departments where dept_name = 'Sales') 
-from employees where emp_no in (
-	select emp_no from dept_emp where dept_no in (
-		select dept_no from departments where dept_name = 'Sales'
-	)
-);
+-- select dept_emp.emp_no, employees.last_name, employees.first_name, departments.dept_name
+-- from employees
+-- join dept_emp on dept_emp.emp_no = employees.emp_no
+-- join departments on dept_emp.dept_no = departments.dept_no
+-- where dept_name = 'Sales';
 
+-- List all employees in Sales, Development departments, including employee number, last name, first name, department name
+-- select dept_emp.emp_no, employees.last_name, employees.first_name, departments.dept_name
+-- from employees
+-- join dept_emp on dept_emp.emp_no = employees.emp_no
+-- join departments on dept_emp.dept_no = departments.dept_no
+-- where dept_name = 'Sales' or dept_name = 'Development';
 
-	
+-- In descending order, list the frequency count of employee last names
+-- select last_name, count(emp_no) as "num_of_employees"
+-- from employees
+-- group by last_name
+-- order by "num_of_employees" desc;
+
