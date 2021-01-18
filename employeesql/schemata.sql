@@ -41,13 +41,12 @@
 
 -- select * from departments;
 
--- !having trouble here
 -- create table dept_emp (
--- 	emp_no serial primary key,
+-- 	emp_no serial,
 -- 	dept_no varchar,
+-- 	primary key (emp_no, dept_no),
 -- 	foreign key (emp_no) references employees (emp_no),
 -- 	foreign key (dept_no) references departments (dept_no)
 -- );
 
-select * from dept_emp;
--- drop table dept_emp;
+-- select * from dept_emp;
