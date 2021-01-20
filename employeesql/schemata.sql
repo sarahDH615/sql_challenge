@@ -26,20 +26,21 @@
 
 -- select * from salaries;
 
--- create table dept_manager (
--- 	dept_no varchar,
--- 	emp_no int primary key,
--- 	foreign key (emp_no) references employees (emp_no)
--- );
-
--- select * from dept_manager;
-
 -- create table departments (
 --  	dept_no varchar primary key,
 --  	dept_name varchar
 -- );
 
 -- select * from departments;
+
+-- create table dept_manager (
+-- 	dept_no varchar,
+-- 	emp_no int primary key,
+-- 	foreign key (emp_no) references employees (emp_no),
+--  foreign key (dept_no) references departments (dept_no)
+-- );
+
+-- select * from dept_manager;
 
 -- create table dept_emp (
 -- 	emp_no serial,
