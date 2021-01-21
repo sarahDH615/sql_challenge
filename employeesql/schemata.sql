@@ -1,5 +1,5 @@
 --create titles table
---both columns take strings
+--both columns take strings (the varchar dtype)
 --the title id column holds unique identifiers, so it will be the primary key
 create table titles (
 	title_id varchar primary key,
@@ -11,6 +11,7 @@ select * from titles;
 
 --create employees table
 --cols are either strings or dates
+--setting a limit on the length of the 'sex' col b/c it should only be one character long
 --emp_title_id col matches the title_id col in titles table (foreign key)
 --emp_no col holds unique values (primary key)
 create table employees (
