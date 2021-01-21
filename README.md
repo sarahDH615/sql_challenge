@@ -21,7 +21,7 @@ To accomplish those goals, the following steps were taken:
     - drawing on the ERD, schemas were written and saved to the file schemata.sql, using postgreSQL syntax, to create tables with the same relationships, foreign, and primary keys in the SQL database
     - the csvs were imported into the appropriate tables in the sql-challenge database
 * Data Analysis: Queries to the SQL Database (file 3)
-    - queries were put to the database to retrieve the following information, and were saved to the file queries.sql:
+    - queries were put to the database to retrieve the following information, and were saved to the file queries.sql (screenshots of the first 16 rows of each query's results are shown below):
         1. For each employee, list: employee number, last name, first name, sex, and salary.
             <p align="center">
             <img src="images/query1.png" width="1000">
