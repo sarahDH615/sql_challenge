@@ -5,6 +5,7 @@
 2. schemata.sql: a file showing the schemas for the tables in the sql-challenge database
 3. queries.sql: a file showing the queries to the sql-challenge database
 4. salary_analysis.ipynb: a jupyter notebook showing graphs generated from queries to the sql-challenge database
+5. images: contains the screengrabs of queries as shown in this README
 
 ### description: 
 This repository is sourced in information on company employees hired in the 1980s and 1990s, found in csv files. The goal of this project was to import the csvs into a SQL database and return results of queries from tables in the database. Additionally, visualisations of the relationships between the salary and title tables were created in a jupyter notebook. 
@@ -62,4 +63,6 @@ To accomplish those goals, the following steps were taken:
     - after checking for null values in sal_title_df, a bar graph was created to compare the average salaries by job title across job titles
     
 ### final considerations:
+The ER diagram revealed a two main concepts within the data set: employees and departments. The employees table relates personal attributes of each employee, and the salaries and titles branch off from the employees table to describe qualities relating to the employees as parts of the organisation: their salaries and their job titles. The departments table gives the names and IDs of the departments. The departments and employees tables are connected by two intermediate tables where the employees are filtered into managers and employees of departments.
+The data set in this project is synthetic, which is purposefully made obvious in a few cases. 
 
