@@ -28,7 +28,7 @@ To accomplish those goals, the following steps were taken:
         </p>
         2. List first name, last name, and hire date for employees hired in 1986.
         <p align="center">
-            <img src="screengrabs/query2.png" width="1000">
+        <img src="screengrabs/query2.png" width="1000">
         </p>
         3. For each department manager, list: department number, department name, the manager's employee number, last name, first name.
         <p align="center">
