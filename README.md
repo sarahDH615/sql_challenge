@@ -64,5 +64,8 @@ To accomplish those goals, the following steps were taken:
     
 ### final considerations:
 The ER diagram revealed a two main concepts within the data set: employees and departments. The employees table relates personal attributes of each employee, and the salaries and titles branch off from the employees table to describe qualities relating to the employees as parts of the organisation: their salaries and their job titles. The departments table gives the names and IDs of the departments. The departments and employees tables are connected by two intermediate tables where the employees are filtered into managers and employees of departments.
+
+Most of the relationships in the tables are one-to-one: one employee has one salary, one title, and is employed by one department. The relations are more complex with the department manager and departments tables: one department can have many employees (one-to-many), and one department can have several managers (one-to-many)
+
 The data set in this project is synthetic, which is purposefully made obvious in a few cases. 
 
