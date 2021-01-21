@@ -23,13 +23,37 @@ To accomplish those goals, the following steps were taken:
 * Data Analysis: Queries to the SQL Database (file 3)
     - queries were put to the database to retrieve the following information, and were saved to the file queries.sql:
         1. For each employee, list: employee number, last name, first name, sex, and salary.
+        <p align="center">
+        <img src="../screengrabs/query1.png" width="1000">
+        </p>
         2. List first name, last name, and hire date for employees hired in 1986.
+        <p align="center">
+        <img src="../screengrabs/query2.png" width="1000">
+        </p>
         3. For each department manager, list: department number, department name, the manager's employee number, last name, first name.
+        <p align="center">
+        <img src="../screengrabs/query3.png" width="1000">
+        </p>
         4. List the department of each employee with: employee number, last name, first name, and department name.
+        <p align="center">
+        <img src="../screengrabs/query4.png" width="1000">
+        </p>
         5. List first name, last name, and sex for employees with first name 'Hercules' and last name beginning with 'B'.
+        <p align="center">
+        <img src="../screengrabs/query5.png" width="1000">
+        </p>
         6. List all employees in the Sales department, with their employee number, last name, first name, and department name.
+        <p align="center">
+        <img src="../screengrabs/query6.png" width="1000">
+        </p>
         7. List all employees in the Sales and Development departments, with their employee number, last name, first name, and department name.
+        <p align="center">
+        <img src="../screengrabs/query7.png" width="1000">
+        </p>
         8. In descending order, list the frequency count of employee last names.
+        <p align="center">
+        <img src="../screengrabs/query8.png" width="1000">
+        </p>
 * Data Visualisation: Importing SQL database into Jupyter Notebook, Graphs (file 4)
     - using SQLAlchemy, the sql-challenge SQL database was imported into the jupyter notebook salary_analysis.ipynb
     - the salaries table from the database was called into the notebook, and made into the dataframe salaries_df

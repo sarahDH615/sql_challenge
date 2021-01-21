@@ -66,4 +66,3 @@ select last_name, count(emp_no) as "num_of_employees"
 from employees
 group by last_name
 order by "num_of_employees" desc;
-
