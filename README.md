@@ -24,7 +24,7 @@ To accomplish those goals, the following steps were taken:
     - queries were put to the database to retrieve the following information, and were saved to the file queries.sql:
         1. For each employee, list: employee number, last name, first name, sex, and salary.
         <p align="center">
-            <img src="screengrabs/query1.png" width="1000">
+            <img src="C:/Users/sarahdalleyhood/Desktop/cu_bootcamp/homeworks/sql_challenge/screengrabs/query1.png" width="1000">
         </p>
         2. List first name, last name, and hire date for employees hired in 1986.
         <p align="center">
