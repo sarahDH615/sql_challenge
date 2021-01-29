@@ -67,7 +67,7 @@ To accomplish those goals, the following steps were taken:
         <p align="center">
             <img src="images/avg-sal_job-titles_bar.png" width="1000">
         </p>
-    - upon observing the bar graph from sal_title_df, another query requesting the titles of jobs making over $50,000, creating the dataframe high_titles_salaries_df, and the function .value_counts() was called on it, to observe the number of employees within each job title making over 50000
+    - upon observing the bar graph from sal_title_df, another query requesting the titles of jobs making over $50,000, creating the dataframe high_titles_salaries_df, and the function .value_counts() was called on it, to observe the number of employees within each job title making over $50,000
     - also as a result of the bar graph from sal_title_df, another query requesting all job titles for all employees, and their salaries, creating the dataframe all_titles_salaries_df. The function .describe() was called on the dataframe, in order to get some simple statistics
         <p align="center">
             <img src="images/summ-stats_avg-sals.png" width="1000">
