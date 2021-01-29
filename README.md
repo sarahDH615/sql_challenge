@@ -59,10 +59,19 @@ To accomplish those goals, the following steps were taken:
     - using SQLAlchemy, the sql-challenge SQL database was imported into the jupyter notebook salary_analysis.ipynb
     - the salaries table from the database was called into the notebook, and made into the dataframe salaries_df
     - after checking for null values in salaries_df, a histogram was made of the salary column, showing the distribution of salary ranges across the employees
+        <p align="center">
+            <img src="images/sal-ranges_hist.png" width="1000">
+        </p>
     - a query to get the average salary by job title was called into the notebook and made into the dataframe sal_title_df
     - after checking for null values in sal_title_df, a bar graph was created to compare the average salaries by job title across job titles
+        <p align="center">
+            <img src="images/avg-sal_job-titles_bar.png" width="1000">
+        </p>
     - upon observing the bar graph from sal_title_df, another query requesting the titles of jobs making over 50000, creating the dataframe high_titles_salaries_df, and the function .value_counts() was called on it, to observe the number of employees within each job title making over 50000
     - also as a result of the bar graph from sal_title_df, another query requesting all job titles for all employees, and their salaries, creating the dataframe all_titles_salaries_df. The function .describe() was called on the dataframe, in order to get some simple statistics
+        <p align="center">
+            <img src="images/summ-stats_avg-sals.png" width="1000">
+        </p>
     - finally, salaries for the job titles 'Engineer' and 'Senior Staff' (the job titles with the lowest and highest mean salary respectively) were created into lists (engineer_salaries, senior_staff_salaries), and an independent t-test was ran upon them
     
 ### observations:
