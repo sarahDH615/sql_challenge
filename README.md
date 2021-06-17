@@ -1,5 +1,7 @@
 # sql_challenge
 
+![Suited Man Climbing Bar Chart](/images/manClimbBars.jpg)
+
 ### contains:
 1. erd.png: an image of an entity relationship diagram for the tables in the sql database sql-challenge
 2. schemata.sql: a file showing the schemas for the tables in the sql-challenge database
